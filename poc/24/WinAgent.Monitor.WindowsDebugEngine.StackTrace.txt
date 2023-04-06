@@ -1,0 +1,164 @@
+
+************* Symbol Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       SRV*http://msdl.microsoft.com/download/symbols
+
+Microsoft (R) Windows Debugger Version 6.3.9600.17200 X86
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: C:\Program Files\Modbus Tools\Modbus Slave\mbslave.exe fuzzed.mbs
+
+************* Symbol Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       SRV*http://msdl.microsoft.com/download/symbols
+Symbol search path is: SRV*http://msdl.microsoft.com/download/symbols
+Executable search path is: 
+ModLoad: 00400000 0094a000   mbslave.exe
+ModLoad: 77160000 772a2000   ntdll.dll
+ModLoad: 75960000 75a35000   C:\Windows\system32\kernel32.dll
+ModLoad: 75560000 755ab000   C:\Windows\system32\KERNELBASE.dll
+ModLoad: 70ad0000 70b02000   C:\Windows\system32\WINMM.dll
+ModLoad: 75840000 758ec000   C:\Windows\system32\msvcrt.dll
+ModLoad: 755c0000 75689000   C:\Windows\system32\USER32.dll
+ModLoad: 772b0000 772fe000   C:\Windows\system32\GDI32.dll
+ModLoad: 75e50000 75e5a000   C:\Windows\system32\LPK.dll
+ModLoad: 75c10000 75cad000   C:\Windows\system32\USP10.dll
+ModLoad: 75f90000 7612d000   C:\Windows\system32\SETUPAPI.dll
+ModLoad: 75530000 75557000   C:\Windows\system32\CFGMGR32.dll
+ModLoad: 756c0000 75762000   C:\Windows\system32\RPCRT4.dll
+ModLoad: 75ee0000 75f81000   C:\Windows\system32\ADVAPI32.dll
+ModLoad: 758f0000 75909000   C:\Windows\SYSTEM32\sechost.dll
+ModLoad: 77320000 773af000   C:\Windows\system32\OLEAUT32.dll
+ModLoad: 75cf0000 75e4c000   C:\Windows\system32\ole32.dll
+ModLoad: 753e0000 753f2000   C:\Windows\system32\DEVOBJ.dll
+ModLoad: 70b40000 70b91000   C:\Windows\system32\WINSPOOL.DRV
+ModLoad: 76510000 7715a000   C:\Windows\system32\SHELL32.dll
+ModLoad: 763b0000 76407000   C:\Windows\system32\SHLWAPI.dll
+ModLoad: 73ff0000 7418e000   C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+ModLoad: 73d60000 73da0000   C:\Windows\system32\UxTheme.dll
+ModLoad: 722f0000 7230c000   C:\Windows\system32\oledlg.dll
+ModLoad: 75cb0000 75ce5000   C:\Windows\system32\WS2_32.dll
+ModLoad: 77310000 77316000   C:\Windows\system32\NSI.dll
+ModLoad: 72510000 7254c000   C:\Windows\system32\OLEACC.dll
+ModLoad: 73b40000 73cd0000   C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.17514_none_72d18a4386696c80\gdiplus.dll
+ModLoad: 76130000 7614f000   C:\Windows\system32\IMM32.DLL
+ModLoad: 75770000 7583c000   C:\Windows\system32\MSCTF.dll
+ModLoad: 71800000 71803000   C:\Windows\system32\api-ms-win-core-synch-l1-2-0.DLL
+ModLoad: 751f0000 751fc000   C:\Windows\system32\CRYPTBASE.dll
+ModLoad: 75b80000 75c03000   C:\Windows\system32\CLBCatQ.DLL
+ModLoad: 74cd0000 74ce7000   C:\Windows\system32\CRYPTSP.dll
+ModLoad: 74a60000 74a9b000   C:\Windows\system32\rsaenh.dll
+ModLoad: 75260000 7526e000   C:\Windows\system32\RpcRtRemote.dll
+ModLoad: 73840000 73853000   C:\Windows\system32\dwmapi.dll
+ModLoad: 74190000 74285000   C:\Windows\system32\propsys.dll
+ModLoad: 73e40000 73e61000   C:\Windows\system32\ntmarta.dll
+ModLoad: 75910000 75955000   C:\Windows\system32\WLDAP32.dll
+ModLoad: 75270000 7527b000   C:\Windows\system32\profapi.dll
+(348.cd8): C++ EH exception - code e06d7363 (first chance)
+(348.cd8): Access violation - code c0000005 (first chance)
+r
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntdll.dll - 
+eax=00000000 ebx=00000000 ecx=994a4f1d edx=771a6d1d esi=00000000 edi=00000000
+eip=994a4f1d esp=0012ef54 ebp=0012ef74 iopl=0         nv up ei pl zr na pe nc
+cs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010246
+994a4f1d ??              ???
+rF
+fpcw=027F: rn 53 puozdi  fpsw=4000: top=0 cc=1000 --------  fptw=FFFF
+fopcode=0000  fpip=0000:73d638cc  fpdp=0000:00000000
+st0= 0.000000000000000000000e+0000  st1= 0.000000000000000000000e+0000
+st2= 0.000000000000000000000e+0000  st3= 0.000000000000000000000e+0000
+st4= 0.000000000000000000000e+0000  st5= 0.000000000000000000000e+0000
+st6= 1.000000000000000000000e+0000  st7= 1.000000000000000000000e+0000
+994a4f1d ??              ???
+rX
+xmm0=0 0 0 0
+xmm1=0 0 0 0
+xmm2=9.18369e-040 9.18369e-040 9.18369e-040 9.18369e-040
+xmm3=3.79081e+022 0 0 0
+xmm4=2.91474e-011 2.91491e-011 7.29905e-012 2.36817e+021
+xmm5=7.30038e-012 9.70653e+024 7.2875e-012 7.46172e-009
+xmm6=3.79034e+022 3.79104e+022 7.28795e-012 3.06293e-005
+xmm7=1.51346e+023 1.44238e+017 3.6232e-041 1.01712e+031
+994a4f1d ??              ???
+
+
+kb
+ChildEBP RetAddr  Args to Child              
+WARNING: Frame IP not in any known module. Following frames may be wrong.
+0012ef50 771a6d09 0012f03c 0012f644 0012f05c 0x994a4f1d
+0012ef74 771a6cdb 0012f03c 0012f644 0012f05c ntdll!RtlRaiseStatus+0xb4
+0012f024 771a6b67 0012f03c 0012f05c 0012f03c ntdll!RtlRaiseStatus+0x86
+*** ERROR: Module load completed but symbols could not be loaded for mbslave.exe
+0012f4d0 004ac005 e06d7363 00000001 00000003 ntdll!KiUserExceptionDispatcher+0xf
+0012f514 004440d4 0012f538 00538a94 aa582459 mbslave+0xac005
+0012f548 00444abb 00000003 00000000 00000004 mbslave+0x440d4
+0012f564 0041f783 00000004 aa582741 03140020 mbslave+0x44abb
+0012f6d0 771a5bac 7556a04d 000001e0 0012f708 mbslave+0x1f783
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\Windows\system32\KERNELBASE.dll - 
+0012f6d4 7556a04d 000001e0 0012f708 0012f6f0 ntdll!NtQueryInformationFile+0xc
+0012f710 7556a082 000001e0 0012f720 00000266 KERNELBASE!GetFileSizeEx+0x1d
+0012f728 0045dea6 aa582651 0012f7c4 004fdae7 KERNELBASE!GetFileSize+0x13
+0012f7a4 00471782 00931638 03140020 00345418 mbslave+0x5dea6
+0012f7d0 00462c9b 0012fc48 aa582915 00000000 mbslave+0x71782
+0012f804 0048b858 0012fc48 00000001 00000001 mbslave+0x62c9b
+0012fe54 0048b630 00328f88 00000001 00318e98 mbslave+0x8b858
+0012fe6c 00462468 00328f88 0054ad00 00328f88 mbslave+0x8b630
+0012fe80 0041bd91 00328f88 0054ad00 0041bd50 mbslave+0x62468
+0012fe94 004613a3 00328f88 aa582fd5 0054ad00 mbslave+0x1bd91
+0012fec4 0041b143 0012fee0 aa582e35 0054ad00 mbslave+0x613a3
+0012ff24 004fb2bb 00000000 00932d00 7ffd7000 mbslave+0x1b143
+0012ff3c 004a6566 00400000 00000000 002e1ac0 mbslave+0xfb2bb
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for C:\Windows\system32\kernel32.dll - 
+0012ff88 759aef6c 7ffd7000 0012ffd4 771c3618 mbslave+0xa6566
+0012ff94 771c3618 7ffd7000 730e71ac 00000000 kernel32!BaseThreadInitThunk+0x12
+0012ffd4 771c35eb 004a660a 7ffd7000 00000000 ntdll!RtlInitializeExceptionChain+0xef
+0012ffec 00000000 004a660a 7ffd7000 00000000 ntdll!RtlInitializeExceptionChain+0xc2
+
+
+.load C:\fuzz\peach-3.1.124-win-x86-release\Debuggers\DebugEngine\msec86.dll
+!exploitable -m
+IDENTITY:HostMachine\HostUser
+PROCESSOR:X86
+CLASS:USER
+QUALIFIER:USER_PROCESS
+EVENT:DEBUG_EVENT_EXCEPTION
+EXCEPTION_FAULTING_ADDRESS:0xffffffff994a4f1d
+EXCEPTION_CODE:0xC0000005
+EXCEPTION_LEVEL:FIRST_CHANCE
+EXCEPTION_TYPE:STATUS_ACCESS_VIOLATION
+EXCEPTION_SUBTYPE:DEP
+MAJOR_HASH:0x76656338
+MINOR_HASH:0x42403f29
+STACK_DEPTH:25
+STACK_FRAME:Unknown
+STACK_FRAME:ntdll!RtlRaiseStatus+0xb4
+STACK_FRAME:ntdll!RtlRaiseStatus+0x86
+STACK_FRAME:ntdll!KiUserExceptionDispatcher+0xf
+STACK_FRAME:mbslave+0xac005
+STACK_FRAME:mbslave+0x440d4
+STACK_FRAME:mbslave+0x44abb
+STACK_FRAME:mbslave+0x1f783
+STACK_FRAME:ntdll!NtQueryInformationFile+0xc
+STACK_FRAME:KERNELBASE!GetFileSizeEx+0x1d
+STACK_FRAME:KERNELBASE!GetFileSize+0x13
+STACK_FRAME:mbslave+0x5dea6
+STACK_FRAME:mbslave+0x71782
+STACK_FRAME:mbslave+0x62c9b
+STACK_FRAME:mbslave+0x8b858
+STACK_FRAME:mbslave+0x8b630
+STACK_FRAME:mbslave+0x62468
+STACK_FRAME:mbslave+0x1bd91
+STACK_FRAME:mbslave+0x613a3
+STACK_FRAME:mbslave+0x1b143
+STACK_FRAME:mbslave+0xfb2bb
+STACK_FRAME:mbslave+0xa6566
+STACK_FRAME:kernel32!BaseThreadInitThunk+0x12
+STACK_FRAME:ntdll!RtlInitializeExceptionChain+0xef
+STACK_FRAME:ntdll!RtlInitializeExceptionChain+0xc2
+INSTRUCTION_ADDRESS:0xffffffff994a4f1d
+INVOKING_STACK_FRAME:1
+DESCRIPTION:Data Execution Prevention Violation
+SHORT_DESCRIPTION:DEPViolation
+CLASSIFICATION:EXPLOITABLE
+BUG_TITLE:Exploitable - Data Execution Prevention Violation starting at Unknown Symbol @ 0xffffffff994a4f1d called from ntdll!RtlRaiseStatus+0x00000000000000b4 (Hash=0x76656338.0x42403f29)
+EXPLANATION:User mode DEP access violations are exploitable.

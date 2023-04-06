@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Peach xmlns="http://peachfuzzer.com/2012/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://peachfuzzer.com/2012/Peach ../peach.xsd">
+	<Defaults>
+	<Number signed="false" />
+	</Defaults>
+	
+	<!-- 定义数据模型 -->
+	<DataModel name="modbus_slave">
+		<Blob name="version" valueType="hex" value="A0 0F 00 00" mutable="false" token="true"/> 
+		<String value="" token="true" />
+	</DataModel>
+
+	<!-- 定义状态模型 -->
+	<StateModel name="TheState" initialState="Initial">
+		<State name="Initial">
+		<Action type="output">
+			<DataModel ref="modbus_slave"/>
+			<!-- 待读取的测试用例文件 -->
+			<Data fileName="sample.mbs"/>
+		</Action>
+		<Action type="close"/>
+		<!-- 定义StartModbusSlave -->
+		<Action type="call" method="StartModbusSlave" publisher="Peach.Agent" />
+		</State>
+	</StateModel>
+	
+	<!-- 定义代理 -->
+	<Agent name="WinAgent">
+		<Monitor class="WindowsDebugger">
+		<Param name="WinDbgPath" value="C:\fuzz\WinDbg\x86\" />
+		<!-- The command line to run. Notice the filename provided matched up
+		to what is provided below in the Publisher configuration -->
+		<Param name="CommandLine" value="C:\Program Files\Modbus Tools\Modbus Slave\mbslave.exe fuzzed.mbs" />
+		<!-- This parameter will cause the debugger to wait for an action-call in
+		the state model with a method="StartModbusSlave" before running
+		program.
+		-->
+		
+		<Param name="StartOnCall" value="StartModbusSlave" />
+		<!-- This parameter will cause the monitor to terminate the process
+		once the CPU usage reaches zero.
+		-->
+		<Param name="CpuKill" value="true"/>
+		</Monitor>
+	</Agent>
+
+	<Test name="Default">
+		<Agent ref="WinAgent" platform="windows"/>
+		<StateModel ref="TheState"/>
+		<!-- 定义Publisher -->
+		<Publisher class="File">
+			<Param name="FileName" value="fuzzed.mbs"/>
+		</Publisher>
+		<!-- 定义日志记录 -->
+		<Logger class="Filesystem">
+			<Param name="Path" value="logs" />
+		</Logger>
+	</Test>
+
+</Peach>
